@@ -1,5 +1,8 @@
 body{
     background-color: black;
+    background-image:url('../imagens/bks/bk1.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 
 font{
