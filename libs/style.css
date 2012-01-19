@@ -4,10 +4,13 @@
 
 body{
     background-color: black;
+    color: white;
+    font-family: Ubuntu, sans-serif;
+    font-size: 14px
 }
 
-font{
-    color: white;
+h1{
+    font-size: 18px;
 }
 
 /* divs */
@@ -25,7 +28,7 @@ font{
     top: 100px;
     left: 0px;
     height: 100px;
-    background-color: yellow;
+    background-color: gray;
 }
 
 #main{
@@ -42,4 +45,14 @@ font{
     left: 0px;
     height: 100px;
     background-color: green;
+}
+
+/* div class */
+
+.div100{
+    width: 100%;
+}
+
+.div20{
+    width: 20%;
 }
