@@ -1,20 +1,48 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-        "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
     <title>ajudadigital</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link href="libs/style.css" rel="stylesheet" type="text/css" media="screen" />
-    <script type="text/javascript" src="libs/script.js" language="JavaScript"></script>
-    <script type="text/javascript" src="libs/jquery.min.js" language="JavaScript"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular&subset=Latin,Cyrillic">
+    <link type="text/css" href="css/ui-darkness/jquery-ui-1.8.17.custom.css" rel="stylesheet" />
+    <link type="text/css" href="css/style.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.17.custom.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("#menu").accordion({ header: "h2", fillSpace: true });
+        });
+    </script>
 </head>
 <body>
-<div id="ad01">
-    <div id="top"><h1>ajudadigital.org</h1></div>
-    <div id="toplogo"><h1>toplogo</h1></div>
-    <div id="menu">menu</div>
-    <div id="main">main</div>
-    <div id="bottom">bottom</div>
+<div id="top">
+    <h1>ajudadigital<span style="font-size: .5em;"> - $('#opensource').give();</span></h1>
+
 </div>
+<div id="menu" style="width: 700px;">
+    <img src="imagens/img_banner_01.jpg">
+    <div>
+        <h2><span style="margin-left: 30px;">Missão</span></h2>
+        <div style="height: 50px;"><p>A ajudadigital é uma organização independente que defende o desenvolvimento e o uso de software livre em todas as áreas da computação.<br />
+        </p></div>
+    </div>
+    <div>
+        <h2><span style="margin-left: 30px;">Filosofia</span></h2>
+        <div>
+            <p>No inicio dos anos 80, Richard M. Stallman foi o primeiro a formalizar as quatro liberdades do software livre. A liberdade de melhorar o programa e de tornar as modificações públicas de modo que a comunidade inteira beneficie da melhoria. O software que siga esses quatro princípios é chamado "Software Livre" (ou Free Software).</p></div>
+    </div>
+    <div>
+        <h2><span style="margin-left: 30px;">Contactos</span></h2>
+        <div><p>Webmaster: <a href="mailto:rfrvidal@gmail.com">rfrvidal</a></p></div>
+    </div>
+</div>
+<div id="main"></div>
+<div id="bottom">
+    <p>powered by:</p>
+    <a href="http://jquery.com/" target="_blank"><img src="imagens/jquery-logo1.png" alt="jquery"></a><a href="http://www.ubuntu.com/" target="_blank"><img src="imagens/ubuntu-logo1.png"></a>
+</div>
+
 </body>
 </html>
+
+
