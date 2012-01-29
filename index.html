@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>ajudadigital</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular&subset=Latin,Cyrillic">
     <link type="text/css" href="css/ui-darkness/jquery-ui-1.8.17.custom.css" rel="stylesheet" />
     <link type="text/css" href="css/style.css" rel="stylesheet" />
@@ -10,7 +10,12 @@
     <script type="text/javascript" src="js/jquery-ui-1.8.17.custom.min.js"></script>
     <script type="text/javascript">
         $(function(){
-            $("#menu").accordion({ header: "h2", fillSpace: true });
+            $("#menu").accordion({ header: "h2", fillSpace: true});
+            $('#dialogo').dialog({
+					autoOpen: false,
+					width: 600,
+					show: 'blind' 
+				});
         });
     </script>
 </head>
@@ -19,29 +24,37 @@
     <h1>ajudadigital<span style="font-size: .5em;"> - $('#opensource').give();</span></h1>
 
 </div>
-<div id="menu" style="width: 700px;">
+<div id="menu" style="width: 700px; height: 150px;">
     <img src="imagens/img_banner_01.jpg">
     <div>
-        <h2><span style="margin-left: 30px;">Miss�o</span></h2>
-        <div style="height: 50px;"><p>A ajudadigital � uma organiza��o independente que defende o desenvolvimento e o uso de software livre em todas as �reas da computa��o.<br />
+        <h2><span style="margin-left: 30px;">Missão</span></h2>
+        <div style="height: 50px;"><p>A ajudadigital é uma organização independente que defende o desenvolvimento e o uso de software livre em todas as áreas da computação.<br />
         </p></div>
     </div>
     <div>
         <h2><span style="margin-left: 30px;">Filosofia</span></h2>
         <div>
-            <p>No inicio dos anos 80, Richard M. Stallman foi o primeiro a formalizar as quatro liberdades do software livre. A liberdade de melhorar o programa e de tornar as modifica��es p�blicas de modo que a comunidade inteira beneficie da melhoria. O software que siga esses quatro princ�pios � chamado "Software Livre" (ou Free Software).</p></div>
+            <p>No inicio dos anos 80, Richard M. Stallman foi o primeiro a formalizar as <a href="#" onclick="$('#dialogo').dialog('open');">quatro liberdades</a> do software livre. A liberdade de melhorar o programa e de tornar as modificações públicas de modo que a comunidade inteira beneficie da melhoria. O software que siga esses quatro princípios é chamado "Software Livre" (ou Free Software).</p></div>
     </div>
     <div>
         <h2><span style="margin-left: 30px;">Contactos</span></h2>
         <div><p>Webmaster: <a href="mailto:rfrvidal@gmail.com">rfrvidal</a></p></div>
     </div>
 </div>
-<div id="main"></div>
+<div id="main">
+    <div id="dialogo" title="4 Liberdades">
+			<p>Um software é considerado como livre quando atende aos quatro tipos de liberdade para os usuários do software definidas pela Free Software Foundation:</p>
+<p><strong>Liberdade 1:</strong> A liberdade para executar o programa, para qualquer propósito;<br />
+<strong>Liberdade 2:</strong> A liberdade de estudar como o programa funciona, e adaptá-lo para as suas necessidades;<br />
+<strong>Liberdade 3:</strong> A liberdade de redistribuir cópias do programa de modo que você possa ajudar ao seu próximo;<br />
+<strong>Liberdade 4:</strong> A liberdade de modificar o programa e distribuir estas modificações, de modo que toda a comunidade se beneficie.</p>
+<p>Acesso ao código-fonte é um pré-requisito para as liberdades 2, 3 e 4.</p>
+		</div>
+</div>
 <div id="bottom">
     <p>powered by:</p>
-    <a href="http://jquery.com/" target="_blank"><img src="imagens/jquery-logo1.png" alt="jquery"></a><a href="http://www.ubuntu.com/" target="_blank"><img src="imagens/ubuntu-logo1.png"></a>
+    <a href="http://jquery.com/" target="_blank"><img src="imagens/jquery-logo1.png" alt="jquery"></a><a href="http://www.ubuntu.com/" target="_blank"><img src="imagens/ubuntu-logo1.png"></a><a href="http://www.aptana.com/" target="_blank"><img src="imagens/AptanaLogo.png"></a>
 </div>
-
 </body>
 </html>
 

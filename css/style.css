@@ -2,7 +2,8 @@ body{
     background-color: #000000;
     color: #f58400;
     font-family: Ubuntu, sans-serif;
-    margin: 50px;
+    margin-left: 50px;
+    margin-top: 20px;
 }
 
 h1{
@@ -26,5 +27,11 @@ img{
     border: none;
 }
 
+/* div */
+
+#bottom{
+	position:fixed;
+	bottom:0px;
+}
 
 
